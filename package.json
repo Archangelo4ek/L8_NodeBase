@@ -1,0 +1,17 @@
+{
+  "name": "L8_NodeBase",
+  "version": "1.0.0",
+  "description": "Учебный проект Node.js для работы с OS и FS",
+  "author": "Артём",
+  "license": "ISC",
+  "scripts": {
+    "start": "node os/index.js & node fs/index.js & node use.js & nodemon app.js --env-file .env.development",
+    "build": "nodemon app.js --env-file .env.production",
+    "deploy": "nodemon app.js --env-file .env.domain"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "nodemon": "^3.1.11"
+  }
+}
